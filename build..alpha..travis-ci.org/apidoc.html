@@ -59,12 +59,415 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.vorlon">module vorlon</a><ol>
 
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">vorlon.</span>css</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">vorlon.</span>site_url</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">vorlon.</span>smoothie</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">vorlon.</span>utils</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">vorlon.</span>vorlon_noplugin</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">vorlon.</span>vorlon_noplugin_max</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.vorlon.css">module vorlon.css</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.vorlon.css.cssjs">
+            function <span class="apidocSignatureSpan">vorlon.css.</span>cssjs
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.vorlon.site_url">module vorlon.site_url</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.vorlon.site_url.retrieve">
+            function <span class="apidocSignatureSpan">vorlon.site_url.</span>retrieve
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.vorlon.site_url.save">
+            function <span class="apidocSignatureSpan">vorlon.site_url.</span>save
+            <span class="apidocSignatureSpan">(url)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.vorlon.smoothie">module vorlon.smoothie</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.vorlon.smoothie.SmoothieChart">
+            function <span class="apidocSignatureSpan">vorlon.smoothie.</span>SmoothieChart
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.vorlon.smoothie.TimeSeries">
+            function <span class="apidocSignatureSpan">vorlon.smoothie.</span>TimeSeries
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.vorlon.utils">module vorlon.utils</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.vorlon.utils.deserializeAddress">
+            function <span class="apidocSignatureSpan">vorlon.utils.</span>deserializeAddress
+            <span class="apidocSignatureSpan">(input)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.vorlon.utils.serializeAddress">
+            function <span class="apidocSignatureSpan">vorlon.utils.</span>serializeAddress
+            <span class="apidocSignatureSpan">(address)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.vorlon.vorlon_noplugin">module vorlon.vorlon_noplugin</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.vorlon.vorlon_noplugin.cssjs">
+            function <span class="apidocSignatureSpan">vorlon.vorlon_noplugin.</span>cssjs
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.vorlon.vorlon_noplugin_max">module vorlon.vorlon_noplugin_max</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.vorlon.vorlon_noplugin_max.cssjs">
+            function <span class="apidocSignatureSpan">vorlon.vorlon_noplugin_max.</span>cssjs
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.vorlon" id="apidoc.module.vorlon">module vorlon</a></h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.vorlon.css" id="apidoc.module.vorlon.css">module vorlon.css</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.vorlon.css.cssjs" id="apidoc.element.vorlon.css.cssjs">
+        function <span class="apidocSignatureSpan">vorlon.css.</span>cssjs
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">cssjs = function () {
+
+  this.cssImportStatements = [];
+  this.cssKeyframeStatements = [];
+
+  this.cssRegex = new RegExp(&#x27;([\\s\\S]*?){([\\s\\S]*?)}&#x27;, &#x27;gi&#x27;);
+  this.cssMediaQueryRegex = &#x27;((@media [\\s\\S]*?){([\\s\\S]*?}\\s*?)})&#x27;;
+  this.cssKeyframeRegex = &#x27;((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})&#x27;;
+  this.combinedCSSRegex = &#x27;((\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})&#x27;; //to match css &#x26; media queries
+ together
+  this.cssCommentsRegex = &#x27;(\\/\\*[\\s\\S]*?\\*\\/)&#x27;;
+  this.cssImportStatementRegex = new RegExp(&#x27;@import .*?;&#x27;, &#x27;gi&#x27;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.vorlon.site_url" id="apidoc.module.vorlon.site_url">module vorlon.site_url</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.vorlon.site_url.retrieve" id="apidoc.element.vorlon.site_url.retrieve">
+        function <span class="apidocSignatureSpan">vorlon.site_url.</span>retrieve
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">() =&#x3e; siteUrl</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+// Create order (with no payment - pending)
+orderService.placePendingOrder(order).then((order) =&#x3e; {
+
+    // Build Checkout url using previously stored Site url
+    var checkoutUrl = util.format(
+        &#x27;%s/checkout?orderId=%s&#x26;address=%s&#x27;,
+        siteUrl.<span class="apidocCodeKeywordSpan">retrieve</span>(),
+        encodeURIComponent(order.id),
+        encodeURIComponent(addressSerialized));
+
+    // ...
+});
+````
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.vorlon.site_url.save" id="apidoc.element.vorlon.site_url.save">
+        function <span class="apidocSignatureSpan">vorlon.site_url.</span>save
+        <span class="apidocSignatureSpan">(url)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(url) =&#x3e; siteUrl = url</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+// /bot/index.js
+var connectorListener = connector.listen();
+function listen() {
+    return function (req, res) {
+        // Capture the url for the hosted application
+        // We&#x27;ll later need this url to create the checkout link
+        var url = req.protocol + &#x27;://&#x27; + req.get(&#x27;host&#x27;);
+        siteUrl.<span class="apidocCodeKeywordSpan">save</span>(url);
+        connectorListener(req, res);
+    };
+}
+
+module.exports.listen = listen;
+
+// /app.js
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.vorlon.smoothie" id="apidoc.module.vorlon.smoothie">module vorlon.smoothie</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.vorlon.smoothie.SmoothieChart" id="apidoc.element.vorlon.smoothie.SmoothieChart">
+        function <span class="apidocSignatureSpan">vorlon.smoothie.</span>SmoothieChart
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function SmoothieChart(options) {
+  this.options = Util.extend({}, SmoothieChart.defaultChartOptions, options);
+  this.seriesSet = [];
+  this.currentValueRange = 1;
+  this.currentVisMinValue = 0;
+  this.lastRenderTimeMillis = 0;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.vorlon.smoothie.TimeSeries" id="apidoc.element.vorlon.smoothie.TimeSeries">
+        function <span class="apidocSignatureSpan">vorlon.smoothie.</span>TimeSeries
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function TimeSeries(options) {
+  this.options = Util.extend({}, TimeSeries.defaultOptions, options);
+  this.clear();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.vorlon.utils" id="apidoc.module.vorlon.utils">module vorlon.utils</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.vorlon.utils.deserializeAddress" id="apidoc.element.vorlon.utils.deserializeAddress">
+        function <span class="apidocSignatureSpan">vorlon.utils.</span>deserializeAddress
+        <span class="apidocSignatureSpan">(input)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(input) =&#x3e; deserializeAddress(descrypt(input))</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var bot = require(&#x27;./bot&#x27;);
+var botUtils = require(&#x27;./bot/utils&#x27;);
+
+/* GET Checkout */
+router.get(&#x27;/&#x27;, function (req, res, next) {
+// orderId and user address
+var orderId = req.query.orderId;
+var address = botUtils.<span class="apidocCodeKeywordSpan">deserializeAddress</span>(req.query.address);
+console.log(&#x27;user address is&#x27;, address);
+
+orderService.retrieveOrder(orderId).then((order) =&#x3e; {
+  // Check order exists
+  if (!order) {
+    throw new Error(&#x27;Order ID not found&#x27;);
+  }
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.vorlon.utils.serializeAddress" id="apidoc.element.vorlon.utils.serializeAddress">
+        function <span class="apidocSignatureSpan">vorlon.utils.</span>serializeAddress
+        <span class="apidocSignatureSpan">(address)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(address) =&#x3e; encrypt(serializeAddress(address))</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+The exchange of messages between bot and user through a channel (e.g. Facebook Messenger, Skype, Slack) is the primary means of
+interaction. However, in some scenarios the bot is waiting for an event that occurs in an external component. For example, the passing
+ of time, an external authentication provider (e.g. OAuth scenarios) or an external payment service. In such cases, an [Address](
+https://docs.botframework.com/en-us/node/builder/chat-reference/interfaces/_botbuilder_d_.iaddress.html) object has the information
+ necessary to resume the conversation.
+
+In this sample, the user proceeds to checkout the order by browsing to an url provided by the bot. This url includes an encoded
+version of the Address object generated in the [checkout&#x27;s root dialog](bot/dialogs/checkout.js#L25) using the included [serializeAddress
+()](bot/utils.js#L5-L15) helper function.
+
+````JavaScript
+// Serialize user address
+var addressSerialized = botUtils.<span class="apidocCodeKeywordSpan">serializeAddress</span>(session.message.address);
+
+// Create order (with no payment - pending)
+orderService.placePendingOrder(order).then((order) =&#x3e; {
+
+// Build Checkout url using previously stored Site url
+var checkoutUrl = util.format(
+    &#x27;%s/checkout?orderId=%s&#x26;address=%s&#x27;,
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.vorlon.vorlon_noplugin" id="apidoc.module.vorlon.vorlon_noplugin">module vorlon.vorlon_noplugin</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.vorlon.vorlon_noplugin.cssjs" id="apidoc.element.vorlon.vorlon_noplugin.cssjs">
+        function <span class="apidocSignatureSpan">vorlon.vorlon_noplugin.</span>cssjs
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">cssjs = function (){this.cssImportStatements=[],this.cssKeyframeStatements=[],this.cssRegex=new RegExp(&#x22;([\\s\\S]*?){([\\s\\S]*?)}&#x22;,&#x22;gi&#x22;),
+this.cssMediaQueryRegex=&#x22;((@media [\\s\\S]*?){([\\s\\S]*?}\\s*?)})&#x22;,this.cssKeyframeRegex=&#x22;((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})&#x22;,this.combinedCSSRegex=&#x22;((\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})&#x22;,this.cssCommentsRegex=&#x22;(\\/\\*[\\s\\S]*?\\*\\/)&#x22;,this.cssImportStatementRegex=new RegExp(&#x22;@import .*?;&#x22;,&#x22;gi&#x22;)}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.vorlon.vorlon_noplugin_max" id="apidoc.module.vorlon.vorlon_noplugin_max">module vorlon.vorlon_noplugin_max</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.vorlon.vorlon_noplugin_max.cssjs" id="apidoc.element.vorlon.vorlon_noplugin_max.cssjs">
+        function <span class="apidocSignatureSpan">vorlon.vorlon_noplugin_max.</span>cssjs
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">cssjs = function () {
+
+  this.cssImportStatements = [];
+  this.cssKeyframeStatements = [];
+
+  this.cssRegex = new RegExp(&#x27;([\\s\\S]*?){([\\s\\S]*?)}&#x27;, &#x27;gi&#x27;);
+  this.cssMediaQueryRegex = &#x27;((@media [\\s\\S]*?){([\\s\\S]*?}\\s*?)})&#x27;;
+  this.cssKeyframeRegex = &#x27;((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})&#x27;;
+  this.combinedCSSRegex = &#x27;((\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})&#x27;; //to match css &#x26; media queries
+ together
+  this.cssCommentsRegex = &#x27;(\\/\\*[\\s\\S]*?\\*\\/)&#x27;;
+  this.cssImportStatementRegex = new RegExp(&#x27;@import .*?;&#x27;, &#x27;gi&#x27;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 </div>
 
