@@ -1,8 +1,8 @@
 # npmdoc-vorlon
 
-api documentation for  vorlon (v0.5.4)  [![npm package](https://img.shields.io/npm/v/npmdoc-vorlon.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-vorlon) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-vorlon.svg)](https://travis-ci.org/npmdoc/node-npmdoc-vorlon)
+#### basic api documentation for  vorlon (v0.5.4)  [![npm package](https://img.shields.io/npm/v/npmdoc-vorlon.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-vorlon) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-vorlon.svg)](https://travis-ci.org/npmdoc/node-npmdoc-vorlon)
 
-vorlon
+#### vorlon
 
 [![NPM](https://nodei.co/npm/vorlon.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/vorlon)
 
